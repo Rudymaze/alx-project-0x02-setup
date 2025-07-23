@@ -11,6 +11,9 @@ const Header: React.FC = () => {
       <h1>My Next.js App</h1>
       <nav>
         <a href="/" style={{ margin: "0 15px" }}>
+          Root
+        </a>
+        <a href="/home" style={{ margin: "0 15px" }}>
           Home
         </a>
         <a href="/about" style={{ margin: "0 15px" }}>
