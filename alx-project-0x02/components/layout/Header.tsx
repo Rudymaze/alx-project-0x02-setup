@@ -1,28 +1,19 @@
-import * as React from "react";
-import Link from", "next/link"
+import React from "react";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header
-      style={{
-        padding: "20px",
-        backgroundColor: "#f0f0f0",
-        textAlign: "center",
-      }}>
-      <h1>My Next.js App</h1>
-      <nav>
-        <a href="/" style={{ margin: "0 15px" }}>
-          Root
-        </a>
-        <a href="/home" style={{ margin: "0 15px" }}>
-          Home
-        </a>
-        <a href="/about" style={{ margin: "0 15px" }}>
-          About
-        </a>
-        <a href="/contact" style={{ margin: "0 15px" }}>
-          Contact
-        </a>
+    <header className="bg-gray-800 text-white p-4">
+      <nav className="container mx-auto flex space-x-4">
+        <Link href="/home">
+          <a className="hover:underline">Home</a>
+        </Link>
+        <Link href="/about">
+          <a className="hover:underline">About</a>
+        </Link>
+        <Link href="/posts">
+          <a className="hover:underline">Posts</a>
+        </Link>
       </nav>
     </header>
   );
