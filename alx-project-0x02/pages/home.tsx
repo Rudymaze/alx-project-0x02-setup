@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Card from "../components/common/Card";
-import PostModal from "../components/common/PostModal";
+import Card from "@/components/common/Card";
+import PostModal from "@/components/common/PostModal";
 
 export default function HomePage() {
   const [posts, setPosts] = useState([

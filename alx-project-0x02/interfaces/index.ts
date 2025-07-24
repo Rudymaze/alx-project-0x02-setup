@@ -2,13 +2,12 @@ interface Props {
   title: string;
   description: string;
 }
-
-interface CardProps {
+export interface CardProps {
   title: string;
   content: string;
 }
 
-export type { Props, CardProps };
+export type { Props };
 
 interface State {
   isLoading: boolean;
