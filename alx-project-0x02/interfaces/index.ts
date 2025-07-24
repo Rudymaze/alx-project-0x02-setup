@@ -15,7 +15,14 @@ export interface ButtonProps {
   [key: string]: any;
 }
 
-export type { Props, CardProps, ButtonProps };
+export interface PostProps {
+  id: number;
+  title: string;
+  body: string;
+  userId: number;
+}
+
+export type { Props, CardProps, ButtonProps, PostProps };
 
 interface State {
   isLoading: boolean;
