@@ -22,7 +22,19 @@ export interface PostProps {
   userId: number;
 }
 
-export type { Props, CardProps, ButtonProps, PostProps };
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+  address: {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+  };
+}
+
+export type { Props, CardProps, ButtonProps, PostProps, UserProps };
 
 interface State {
   isLoading: boolean;
