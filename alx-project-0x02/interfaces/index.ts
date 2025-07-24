@@ -3,7 +3,12 @@ interface Props {
   description: string;
 }
 
-export type { Props };
+interface CardProps {
+  title: string;
+  content: string;
+}
+
+export type { Props, CardProps };
 
 interface State {
   isLoading: boolean;
